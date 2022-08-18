@@ -1,0 +1,203 @@
+/* INDEX CSS */
+/* INDEX PORTADA */
+.portada {
+    max-width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+        figure {
+            position: relative;
+            cursor: pointer;
+            max-width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    transition: all 300ms ease;
+                }
+        }
+}
+
+.portada figure .info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.1);
+    color: white;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+}
+
+.portada figure:hover > .info {
+    opacity: 1;
+    visibility: visible;
+}
+
+.info h3 {
+    color: white;
+    font-size: 2rem;
+    padding: 15%;
+}
+
+.info h1 {
+    color: white;
+}
+
+.info p {
+    color: white;
+    padding: 3%;
+                
+}
+/* FINAL INDEX PORTADA */
+/* INDEX TARJETAS */
+.tarjetas-all {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url(./imagenes/empresafondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+        h4 {
+            font-size: 1rem;
+            font-family: 'Merriweather', serif;
+        }
+}
+
+
+.tarjeta {
+    display: grid;
+    justify-items: center;
+    float: left;
+    width: 300px;
+    height: fit-content;
+    margin: 2rem;
+    padding: 2rem;
+    border: double;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 300ms ease;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: scale(1.15);
+}
+
+.img-informativa {
+    max-width: 200px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.img-tarjeta {
+    width: 100%;
+    height: 100%;
+}
+/* FINAL INDEX TARJETAS */
+/* INDEX FORMULARIO */
+.formulario-contacto {
+    font-family: 'Merriweather', serif;
+    background-color: rgb(110, 149, 213);
+    display: table-column;
+    text-align: center;
+}
+
+.contacto {
+    font-family: 'Merriweather', serif;
+    border: double;
+    background-color: rgb(110, 149, 213);
+}
+/* FINAL INDEX FORMULARIO */
+/* FOOTER */
+.pie-de-pag {
+    width: 100%;
+    background-color: rgb(110, 149, 213);
+}
+
+.pie-de-pag .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-de-pag .grupo-1 .box .figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-de-pag .grupo-1 .box .figure .img {
+    width: 200px;
+}
+
+.pie-de-pag .grupo-1 .box h2 {
+    font-family: 'Merriweather', serif;
+    color: black;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+
+.pie-de-pag .grupo-1 .box p {
+    color: white;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+    font-size: 12px;
+}
+
+.pie-de-pag .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #103778;
+    margin-right: 10px;
+    background-color: rgb(110, 149, 213);
+    text-align: center;
+    transition: all 300ms ease;
+}  
+
+.pie-de-pag .grupo-1 .red-social a:hover {
+    color: white;
+}
+
+.pie-de-pag .grupo-2 {
+    background-color: #8C1F28;
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+
+        small {
+            font-size: 15px;
+            font-family: 'Merriweather', serif;
+        }
+}
+/* FINAL FOOTER */
+/* INDEX RESPONSIVE */
+@media screen and (max-width:800px) {
+    .pie-de-pag .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+/* FINAL INDEX RESPONSIVE */
+/* FINAL INDEX CSS */

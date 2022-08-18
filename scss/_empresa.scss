@@ -1,0 +1,78 @@
+/* EMPRESA CSS */
+/* EMPRESA TARJETAS */
+.tarjetas-allemp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: url(./imagenes/empresa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+        h4 {
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            font-family: 'Merriweather', serif;
+        }
+}
+
+.tarjeta-emp {
+    float: left;
+    width: 300px;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 0 10px 30px -10px;
+    background-color: white;
+    border: double;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+
+.tarjeta-emp:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: scale(1.15);
+}
+
+.container-emp{
+    max-width: 260px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.img-emp {
+    width: 100%;
+    height: 100%;
+}
+/* FINAL EMPRESA TARJETAS */
+/* EMPRESA RESPONSIVE */
+@media screen and (max-width:460px)  {
+    .titulo-pag{
+        font-size: 1rem;
+    }
+    
+    .menu-pag{
+        font-size: 1.5rem;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .tarjetas-allemp{
+        width: 100%;
+    }
+    .tarjetaemp{
+        max-width: 320px;
+    }
+    .img-tarjeta{
+        max-width: 320px;
+    }
+  
+}
+/* FINAL EMPRESA RESPONSIVE */
+/* FINAL EMPRESA CSS*/

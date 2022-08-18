@@ -1,0 +1,31 @@
+/* UNIDADES CSS */
+/* TEXTO UNIDADES */
+.texto-unidades {
+    font-size: 2rem;
+    font-family: 'Merriweather', serif;
+    background-color: rgb(110, 149, 213);
+    text-align: center;
+
+        h4 {
+            margin: 2% 2% 2% 2%;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+}
+/* FINAL TEXTO UNIDADES */
+/* GALERIA */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0.7rem;
+
+        img {
+            max-width: 100%;
+            height: 100%;
+        }
+}
+/* FINAL GALERIA */
+/* FINAL UNIDADES CSS */

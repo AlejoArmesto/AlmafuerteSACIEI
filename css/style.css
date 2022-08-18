@@ -1,0 +1,455 @@
+/* EMPRESA CSS */
+/* EMPRESA TARJETAS */
+.tarjetas-allemp {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: url(./imagenes/empresa.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.tarjetas-allemp h4 {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Merriweather", serif;
+}
+
+.tarjeta-emp {
+  float: left;
+  width: 300px;
+  margin: 2rem;
+  padding: 2rem;
+  box-shadow: 0 10px 30px -10px;
+  background-color: white;
+  border: double;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta-emp:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.15);
+}
+
+.container-emp {
+  max-width: 260px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.img-emp {
+  width: 100%;
+  height: 100%;
+}
+
+/* FINAL EMPRESA TARJETAS */
+/* EMPRESA RESPONSIVE */
+@media screen and (max-width: 460px) {
+  .titulo-pag {
+    font-size: 1rem;
+  }
+  .menu-pag {
+    font-size: 1.5rem;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .tarjetas-allemp {
+    width: 100%;
+  }
+  .tarjetaemp {
+    max-width: 320px;
+  }
+  .img-tarjeta {
+    max-width: 320px;
+  }
+}
+/* FINAL EMPRESA RESPONSIVE */
+/* FINAL EMPRESA CSS*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBALS CSS */
+.header-encabezado {
+  color: black;
+  text-align: center;
+  background-color: rgb(110, 149, 213);
+}
+.header-encabezado .Logo {
+  display: flex;
+}
+
+.titulo-pag {
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
+  font-size: 4.2rem;
+}
+
+.menu-pag {
+  color: black;
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  background-color: #8C1F28;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.descripcion-pag {
+  text-transform: uppercase;
+  border: solid;
+  text-align: center;
+  background-color: rgb(110, 149, 213);
+}
+
+.nav__list {
+  list-style: none;
+  background-color: #103778;
+  overflow: hidden;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+  max-width: 100%;
+  font-family: "Kanit", sans-serif;
+}
+
+nav ul .nav_li a {
+  color: azure;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000000;
+}
+
+.nav_link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.nav_li {
+  float: left;
+  text-align: center;
+  transition: all 300ms;
+}
+.nav_li :hover {
+  transform: scale(1.15);
+}
+
+.img {
+  max-width: 100%;
+}
+
+body {
+  background-color: rgb(110, 149, 213);
+}
+
+/* FINAL GLOBALS CSS */
+/* INDEX CSS */
+/* INDEX PORTADA */
+.portada {
+  max-width: 100%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.portada figure {
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+}
+.portada figure img {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms ease;
+}
+
+.portada figure .info {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.portada figure:hover > .info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.info h3 {
+  color: white;
+  font-size: 2rem;
+  padding: 15%;
+}
+
+.info h1 {
+  color: white;
+}
+
+.info p {
+  color: white;
+  padding: 3%;
+}
+
+/* FINAL INDEX PORTADA */
+/* INDEX TARJETAS */
+.titulo-tarjetas {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  margin: 1.2rem;
+  font-size: 2.5rem;
+  box-shadow: 0px 6px 8px;
+  background-color: #8C1F28;
+  border: solid;
+  border-radius: 60px;
+}
+
+.tarjetas-all {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url(./imagenes/empresafondo2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.tarjetas-all h4 {
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+}
+
+.tarjeta {
+  display: grid;
+  justify-items: center;
+  float: left;
+  width: 300px;
+  height: fit-content;
+  margin: 2rem;
+  padding: 2rem;
+  border: double;
+  border-radius: 15px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 300ms ease;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tarjeta:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.15);
+}
+
+.img-informativa {
+  max-width: 200px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.img-tarjeta {
+  width: 100%;
+  height: 100%;
+}
+
+/* FINAL INDEX TARJETAS */
+/* INDEX FORMULARIO */
+.formulario-contacto {
+  font-family: "Merriweather", serif;
+  background-color: rgb(110, 149, 213);
+  display: table-column;
+  text-align: center;
+}
+
+.contacto {
+  font-family: "Merriweather", serif;
+  border: double;
+  background-color: rgb(110, 149, 213);
+}
+
+/* FINAL INDEX FORMULARIO */
+/* FOOTER */
+.pie-de-pag {
+  width: 100%;
+  background-color: rgb(110, 149, 213);
+}
+
+.pie-de-pag .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-de-pag .grupo-1 .box .figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-de-pag .grupo-1 .box .figure .img {
+  width: 200px;
+}
+
+.pie-de-pag .grupo-1 .box h2 {
+  font-family: "Merriweather", serif;
+  color: black;
+  margin-bottom: 25px;
+  font-size: 25px;
+}
+
+.pie-de-pag .grupo-1 .box p {
+  color: white;
+  margin-bottom: 10px;
+  font-family: "Merriweather", serif;
+  font-size: 12px;
+}
+
+.pie-de-pag .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #103778;
+  margin-right: 10px;
+  background-color: rgb(110, 149, 213);
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-de-pag .grupo-1 .red-social a:hover {
+  color: white;
+}
+
+.pie-de-pag .grupo-2 {
+  background-color: #8C1F28;
+  padding: 15px 10px;
+  text-align: center;
+  color: black;
+}
+.pie-de-pag .grupo-2 small {
+  font-size: 15px;
+  font-family: "Merriweather", serif;
+}
+
+/* FINAL FOOTER */
+/* INDEX RESPONSIVE */
+@media screen and (max-width: 800px) {
+  .pie-de-pag .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+/* FINAL INDEX RESPONSIVE */
+/* FINAL INDEX CSS */
+/* LINEAS CSS */
+/* LINEAS TABLAS */
+.tabla-lineas {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.tabla {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10% 10% 10% 10%;
+  background-color: rgb(110, 149, 213);
+  font-family: "Merriweather", serif;
+}
+
+/* FINAL LINEAS TABLAS */
+/* FINAL LINEAS CSS*/
+/* RECORRIDOS CSS */
+/* RECORRIDOS */
+.recorridos {
+  font-family: "Merriweather", serif;
+  font-size: 2rem;
+  text-align: center;
+  background-color: rgb(110, 149, 213);
+  border: solid;
+}
+.recorridos h4 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.descripcion-recorrido {
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+}
+
+.img-recorridos {
+  width: 75vw;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+}
+
+.img-r {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+}
+
+/* FINAL RECORRIDOS */
+/* FINAL RECORRIDOS CSS*/
+/* UNIDADES CSS */
+/* TEXTO UNIDADES */
+.texto-unidades {
+  font-size: 2rem;
+  font-family: "Merriweather", serif;
+  background-color: rgb(110, 149, 213);
+  text-align: center;
+}
+.texto-unidades h4 {
+  margin: 2% 2% 2% 2%;
+}
+.texto-unidades p {
+  font-size: 1.5rem;
+}
+
+/* FINAL TEXTO UNIDADES */
+/* GALERIA */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0.7rem;
+}
+.galeria img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* FINAL GALERIA */
+/* FINAL UNIDADES CSS */
+
+/*# sourceMappingURL=style.css.map */

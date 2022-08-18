@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="icono/autobus.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Lobster&family=Merriweather:ital,wght@1,900&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e8efd84eab.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Empresa de Transporte, Lineas comunales y provinciales. Servicio publico.">
+    <meta name="keywords" content="empresa, transporte, servicio, publico, colectivos, lineas, recorridos, ALMAFUERTE SACIEI">
+    <title>Almafuerte SACIEI</title>
+</head>
+<body>
+    <!-- LINKS -->
+    <header>
+        <div class="header-encabezado">
+                <img class="Logo" src="icono/autobus.png" alt="Logo de la pagina"/>
+            <h1 class="titulo-pag">ALMAFUERTE SACIEI - SITIO OFICIAL</h1>
+            <h3 class="menu-pag">Menu Principal</h3>
+        </div>
+        <nav>
+            <ul class="nav__list">
+                <li class="nav_li"><a class="nav_link" href="index.html">Inicio</a></li>
+                <li class="nav_li"><a class="nav_link" href="pages/empresa.html">Empresa</a></li>
+                <li class="nav_li"><a class="nav_link" href="pages/lineas.html">Lineas</a></li>
+                <li class="nav_li"><a class="nav_link" href="pages/recorridos.html">Recorridos</a></li>
+                <li class="nav_li"><a class="nav_link" href="pages/unidades.html">Unidades</a></li>
+            </ul>
+        </nav>
+        <div class="subtitulo-pag">
+            <h2 class="descripcion-pag"><em><i>Bienvenidos a la pagina oficial de la empresa de Transporte Almafuerte SACIEI!</i></em></h2>
+        </div>
+    </header>
+    <!-- CIERRE DE LINKS -->
+    <main>
+    <!-- PORTADA -->
+    <div class="portada">
+        <figure>
+            <img src="imagenes/empresa_fondo.jpg" alt="Foto de portada">
+            <div class="info">
+                <h3>AL SERVICIO DEL PASAJERO!</h3>
+                <h1>ALMAFUERTE EMPRESA DE TRANSPORTE, UNA FAMILIA.</h1>
+                <p>Empresa de transporte de mas de 50 años de trayectoria.</p>
+            </div>
+        </figure>
+    </div>
+    <!-- CIERRE PORTADA-->
+    <!-- TARJETAS INFORMATIVAS -->
+        <section class="tarjetas-all">
+            <div class="tarjeta">
+                <div class="img-informativa">
+                    <img class="img-tarjeta" src="imagenes/empresa.jpg" alt="Tarjeta Informativa"/>
+                </div>
+                <h4>OBJETIVO</h4>
+                <p>Nuestro objetivo es lograr que el pasajero pueda disfrutar de un viaje placentero, seguro, con las unidades limpias, acortar el tiempo de espera en las paradas y todo esto, gracias a todo el personal que dia a dia suma su grano de arena para que esto funcione de la mejor manera.</p>
+            </div>
+            <div class="tarjeta">
+                <div class="img-informativa">
+                    <img class="img-tarjeta" src="imagenes/empresa.jpg" alt="Tarjeta Informativa"/>
+                </div>
+                <h4>ACTUALIDAD</h4>
+                <p>Hoy en dia, gracias al esfuerzo de todos, la empresa se encuentra muy bien, innovando tanto en infraestructura como en unidades y capacitando al personal para que de todo a la hora de trabajar! Contamos con 263 unidades para el transporte de pasajeros.</p>
+            </div>   
+            <div class="tarjeta">
+                <div class="img-informativa">
+                    <img class="img-tarjeta" src="imagenes/empresa.jpg" alt="Tarjeta Informativa"/>
+                </div>
+                <h4>PASADO</h4>
+                <p>Gracias a nuestros abuelos.. padres.. que en su momento dieron todo por esta empresa, hoy en dia estamos en pleno crecimiento y seguimos los pasos de ellos, quienes empezaron esta hermosa locura.</p>
+            </div>
+        </section>
+    <!-- CIERRE TARJETAS INFORMATIVAS -->
+    <!-- FORMULARIO -->
+    <form>
+        <fieldset class="formulario-contacto">
+            <legend class="contacto">Formulario de contacto!</legend>
+            <label for="Nombre">Nombre:</label>
+            <div>
+                <input type="text" name="Nombre" id="Nombre"/>
+            </div>
+            <label for="Apellido">Apellido:</label>
+            <div>
+                <input type="text" name="Apellido" id="Apellido"/>
+            </div>
+            <label for="Email">Email:</label>
+            <div>
+                <input type="email" name="Email" id="Email"/>
+            </div>
+            <label for="Sexo">Sexo:</label>
+            <div>
+                <input type="radio" name="Sexo" value="Hombre"/>Hombre <input type="radio" name="Sexo" value="Mujer"/>Mujer <input type="radio" name="Sexo" value="Indefinido"/>Indefinido
+            </div>
+            <div>
+                <select name="" id="">
+                    <option value="S">Soltero/a</option>
+                    <option value="C">Casado/a</option>
+                    <option value="O">Otro</option>
+                </select>
+            </div>
+            <div>¿Cual es su consulta?</div>
+            <textarea name="Mensaje" id="Mensaje" cols="10" rows="5"></textarea>
+            <div>
+                <input type="submit" value="Enviar Solicitud"/>
+                <input type="reset" value="Limpiar Solicitud"/>
+            </div>
+            <input type="checkbox" name="Aceptar terminos y condiciones" value="1"/>Acepta terminos y condiciones
+            
+        </fieldset>
+    </form>
+    <!-- CIERRE FORMULARIO -->
+    </main>
+    <!-- PIE DE PAGINA -->
+    <footer class="pie-de-pag">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="icono/autobus.png" alt="Logo de pagina">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>CONTACTO</h2>
+                <p>Direccion: Av.Brig Gral. Juan Manuel de Rosas 7849</p>
+                <p>Isidrio Casanova, Provincia de Buenos Aires</p>
+                <p>Telefono: (011) 4625-0507</p>
+            </div>
+            <div class="box">
+                <h2>REDES SOCIALES</h2>
+                <div class="red-social">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+             </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>ALMAFUERTE SACIEI</b> - Todos Los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <!-- CIERRE PIE DE PAGINA -->
+</body>
+</html>
