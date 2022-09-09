@@ -8,32 +8,30 @@
     color: black;
     text-align: center;
     background-color: rgb(110, 149, 213);
-
-    .Logo {
-        display: flex;
-    }
-    
 }
 
 .titulo-pag {
-    font-family: 'Merriweather', serif;
-    text-transform: uppercase;
-    font-size: 4.2rem;
+    font-family: "Kanit", sans-serif;
+    font-size: 2.6rem;
+    color: white;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;
 }
 
 .menu-pag {
-    color: black;
+    color: white;
     font-family: 'Kanit', sans-serif;
     text-align: center;
     background-color: #8C1F28;
     text-transform: uppercase;
-    padding: 1rem;
+    padding: 0.3rem;
     font-size: 1.5rem;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;
 }
 
 .descripcion-pag {
     text-transform: uppercase;
-    border: solid;
     text-align: center;
     background-color: rgb(110, 149, 213);
 } 

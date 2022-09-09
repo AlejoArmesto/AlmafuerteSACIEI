@@ -50,8 +50,7 @@
 
 .info p {
     color: white;
-    padding: 3%;
-                
+    padding: 15%;               
 }
 /* FINAL INDEX PORTADA */
 /* INDEX TARJETAS */
@@ -60,7 +59,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background: url(./imagenes/empresafondo2.jpg);
+    background: url(../imagenes/empresa_fondo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;

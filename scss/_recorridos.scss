@@ -1,34 +1,12 @@
 /* RECORRIDOS CSS */
-/* RECORRIDOS */
-.recorridos { 
-    font-family: 'Merriweather', serif;
-    font-size: 2rem;
-    text-align: center;
-    background-color: rgb(110, 149, 213);
-    border: solid;
-
-        h4 {
-            text-transform: uppercase;
-            font-size: 1.5rem;
-        }
+/* RECORRIDOS TABLA */
+table, th, td {
+    border: 1px solid black;
+    
 }
 
-.descripcion-recorrido {
-    font-size: 1rem;
-    font-family: 'Merriweather', serif;
+th, td {
+    padding: 15px;
 }
-
-.img-recorridos {
-    width: 75vw;
-    max-width: 1000px;
-    min-width: 300px;
-    margin: auto;
-}
-
-.img-r {
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0px 3px 5px rgb(15, 15, 15, .5);
-}
-/* FINAL RECORRIDOS */
+/* FINAL RECORRIDOS TABLA */
 /* FINAL RECORRIDOS CSS*/

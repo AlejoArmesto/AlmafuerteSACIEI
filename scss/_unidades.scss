@@ -1,31 +1,97 @@
 /* UNIDADES CSS */
-/* TEXTO UNIDADES */
-.texto-unidades {
-    font-size: 2rem;
-    font-family: 'Merriweather', serif;
-    background-color: rgb(110, 149, 213);
-    text-align: center;
-
-        h4 {
-            margin: 2% 2% 2% 2%;
-        }
-
-        p {
-            font-size: 1.5rem;
-        }
-}
-/* FINAL TEXTO UNIDADES */
 /* GALERIA */
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-gap: 0.7rem;
-
-        img {
-            max-width: 100%;
-            height: 100%;
-        }
+body {
+    background: rgb(110, 149, 213);
+    margin: 0;
+    font-family: "Kanit", sans-serif;
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 1.2rem;
+        -webkit-text-stroke: 1px;
+        -webkit-text-stroke-color: #000000;
+    }
 }
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    list-style: none;
+    padding: 5%;
+    box-sizing: border-box;
+    justify-content: space-around;
+    img {
+        width: 150px;
+        height: 100px;
+    }
+    li {
+        margin: 5px;
+    }
+}
+
+.gal-mov {
+    display: none;
+}
+
+.gal-mov:target {
+    display: block;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+} 
+
+.img-unidades {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        color: white;
+        font-size: 40px;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    img {
+        width: 500px;
+        height: 100%;
+        max-width: 100%;
+        border: 7px solid #fff;
+        box-sizing: border-box;
+    }
+}
+
+.img-unidades a:nth-child(2) {
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.salir {
+    display: block;
+    background: #fff;
+    width: 25px;
+    height: 25px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    border-radius: 50%;
+    line-height: 25px;
+
+}
+
 /* FINAL GALERIA */
 /* FINAL UNIDADES CSS */

@@ -5,7 +5,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  background: url(./imagenes/empresa.jpg);
+  background: url(../imagenes/empresa.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -85,29 +85,29 @@
   text-align: center;
   background-color: rgb(110, 149, 213);
 }
-.header-encabezado .Logo {
-  display: flex;
-}
 
 .titulo-pag {
-  font-family: "Merriweather", serif;
-  text-transform: uppercase;
-  font-size: 4.2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 2.6rem;
+  color: white;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 
 .menu-pag {
-  color: black;
+  color: white;
   font-family: "Kanit", sans-serif;
   text-align: center;
   background-color: #8C1F28;
   text-transform: uppercase;
-  padding: 1rem;
+  padding: 0.3rem;
   font-size: 1.5rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 
 .descripcion-pag {
   text-transform: uppercase;
-  border: solid;
   text-align: center;
   background-color: rgb(110, 149, 213);
 }
@@ -206,7 +206,7 @@ body {
 
 .info p {
   color: white;
-  padding: 3%;
+  padding: 15%;
 }
 
 /* FINAL INDEX PORTADA */
@@ -216,7 +216,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  background: url(./imagenes/empresafondo2.jpg);
+  background: url(../imagenes/empresa_fondo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -358,84 +358,166 @@ body {
 /* FINAL INDEX RESPONSIVE */
 /* FINAL INDEX CSS */
 /* LINEAS CSS */
-/* LINEAS TABLAS */
-.tabla-lineas {
+/* LINEAS INFO*/
+.info-lineas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url(../imagenes/playon.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
 }
 
-.tabla {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 10% 10% 10% 10%;
-  background-color: rgb(110, 149, 213);
-  font-family: "Merriweather", serif;
+.img-lineas {
+  float: left;
+  width: 300px;
+  margin: 2rem;
+  padding: 2rem;
 }
-
-/* FINAL LINEAS TABLAS */
-/* FINAL LINEAS CSS*/
-/* RECORRIDOS CSS */
-/* RECORRIDOS */
-.recorridos {
-  font-family: "Merriweather", serif;
-  font-size: 2rem;
-  text-align: center;
-  background-color: rgb(110, 149, 213);
+.img-lineas .img-218 {
+  max-width: 260px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 3%;
   border: solid;
 }
-.recorridos h4 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-}
-
-.descripcion-recorrido {
-  font-size: 1rem;
-  font-family: "Merriweather", serif;
-}
-
-.img-recorridos {
-  width: 75vw;
-  max-width: 1000px;
-  min-width: 300px;
-  margin: auto;
-}
-
-.img-r {
+.img-lineas .linea-218 {
   width: 100%;
-  border-radius: 15px;
-  box-shadow: 0px 3px 5px rgba(15, 15, 15, 0.5);
+  height: 100%;
+  border-radius: 5%;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.img-lineas .p-info {
+  color: white;
+  font-family: "Merriweather", serif;
+  text-transform: uppercase;
 }
 
-/* FINAL RECORRIDOS */
+.linea-218:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.15);
+}
+
+.texto-lineas {
+  display: flex;
+  justify-content: center;
+}
+.texto-lineas li {
+  font-size: 25px;
+  font-family: "Merriweather", serif;
+  padding: 3%;
+}
+
+/* FINAL LINEAS INFO*/
+/* FINAL LINEAS CSS*/
+/* RECORRIDOS CSS */
+/* RECORRIDOS TABLA */
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 15px;
+}
+
+/* FINAL RECORRIDOS TABLA */
 /* FINAL RECORRIDOS CSS*/
 /* UNIDADES CSS */
-/* TEXTO UNIDADES */
-.texto-unidades {
-  font-size: 2rem;
-  font-family: "Merriweather", serif;
-  background-color: rgb(110, 149, 213);
+/* GALERIA */
+body {
+  background: rgb(110, 149, 213);
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+}
+body h2 {
+  color: white;
   text-align: center;
-}
-.texto-unidades h4 {
-  margin: 2% 2% 2% 2%;
-}
-.texto-unidades p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #000000;
 }
 
-/* FINAL TEXTO UNIDADES */
-/* GALERIA */
 .galeria {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  grid-gap: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  list-style: none;
+  padding: 5%;
+  box-sizing: border-box;
+  justify-content: space-around;
 }
 .galeria img {
-  max-width: 100%;
+  width: 150px;
+  height: 100px;
+}
+.galeria li {
+  margin: 5px;
+}
+
+.gal-mov {
+  display: none;
+}
+
+.gal-mov:target {
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+}
+
+h3 {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+}
+
+.img-unidades {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-unidades a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+  margin: 0 10px;
+}
+.img-unidades img {
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+}
+
+.img-unidades a:nth-child(2) {
+  margin: 0;
+  height: 100%;
+  flex-shrink: 2;
+}
+
+.salir {
+  display: block;
+  background: #fff;
+  width: 25px;
+  height: 25px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000;
+  border-radius: 50%;
+  line-height: 25px;
 }
 
 /* FINAL GALERIA */

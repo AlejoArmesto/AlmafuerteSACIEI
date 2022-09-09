@@ -1,18 +1,63 @@
 /* LINEAS CSS */
-/* LINEAS TABLAS */
-.tabla-lineas {
+/* LINEAS INFO*/
+.info-lineas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background: url(../imagenes/playon.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-.tabla {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10% 10% 10% 10%;
-    background-color: rgb(110, 149, 213);
-    font-family: 'Merriweather', serif;
+.img-lineas {
+    float: left;
+    width: 300px;
+    margin: 2rem;
+    padding: 2rem;   
+
+    .img-218 {
+        max-width: 260px;
+        height: 150px;
+        overflow: hidden;
+        border-radius: 3%;
+        border: solid;
+    } 
+
+    .linea-218 {
+        width: 100%;
+        height: 100%;
+        border-radius: 5%;
+        transition: all 300ms ease;
+        cursor: pointer;
+    }
+
+    .p-info {
+        color: white;
+        font-family: "Merriweather", serif;
+        text-transform: uppercase;
+    }
 }
-/* FINAL LINEAS TABLAS */
+
+
+
+.linea-218:hover {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+    transform: scale(1.15);
+}
+
+.texto-lineas {
+    display: flex;
+    justify-content: center;
+
+    li {
+        font-size: 25px;
+        font-family: "Merriweather", serif;
+        padding: 3%;
+    }
+}
+
+/* FINAL LINEAS INFO*/
 /* FINAL LINEAS CSS*/
