@@ -5,7 +5,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-    background: url(../imagenes/playon.jpg);
+    background: url(../imagenes/carteleraalmafuerte.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -24,6 +24,7 @@
         overflow: hidden;
         border-radius: 3%;
         border: solid;
+        border-color: #8C1F28;
     } 
 
     .linea-218 {
@@ -56,6 +57,7 @@
         font-size: 25px;
         font-family: "Merriweather", serif;
         padding: 3%;
+        color: #8C1F28;
     }
 }
 

@@ -364,7 +364,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  background: url(../imagenes/playon.jpg);
+  background: url(../imagenes/carteleraalmafuerte.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -383,6 +383,7 @@ body {
   overflow: hidden;
   border-radius: 3%;
   border: solid;
+  border-color: #8C1F28;
 }
 .img-lineas .linea-218 {
   width: 100%;
@@ -410,6 +411,7 @@ body {
   font-size: 25px;
   font-family: "Merriweather", serif;
   padding: 3%;
+  color: #8C1F28;
 }
 
 /* FINAL LINEAS INFO*/
@@ -428,6 +430,14 @@ th, td {
 /* FINAL RECORRIDOS CSS*/
 /* UNIDADES CSS */
 /* GALERIA */
+.gal-un {
+  background: url(../imagenes/cartelerasaciei.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 body {
   background: rgb(110, 149, 213);
   margin: 0;

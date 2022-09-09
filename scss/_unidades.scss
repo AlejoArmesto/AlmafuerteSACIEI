@@ -1,5 +1,14 @@
 /* UNIDADES CSS */
 /* GALERIA */
+
+.gal-un {
+    background: url(../imagenes/cartelerasaciei.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 body {
     background: rgb(110, 149, 213);
     margin: 0;
